@@ -1,89 +1,91 @@
 div.wrap-box {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: auto;
 }
 
 #popup {
-    width: 30%;
-    height: 50%;
-    background-color: white;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  width: 30%;
+  height: 50%;
+  background-color: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
-    box-shadow: 9px 9px 14px 0px rgba(41, 50, 50, 0.61);
-    display: flex;
-    justify-content: center;
-    overflow: auto;
-    align-items: center;
-    transition: visibility 0.3s, opacity 0.3s linear;
+  box-shadow: 9px 9px 14px 0px rgba(41, 50, 50, 0.61);
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+  align-items: center;
+  transition: visibility 0.3s, opacity 0.3s linear;
 }
 
 #contentContainer {
-    width: 80%;
-    margin: 0;
-    position: absolute;
-    text-align: center;
-    font-size: 1.1em;
+  width: 80%;
+  margin: 0;
+  position: absolute;
+  text-align: center;
+  font-size: 1.1em;
 }
 
 div.content {
-    text-align: center;
-    width: 300px;
-    border: 0.5px solid rgb(99, 95, 95);
-    color: rgb(99, 95, 95);
-    margin: 0.5px;
-    cursor: pointer;
-    transition: all .7s;
-    overflow: auto;
+  text-align: center;
+  width: 300px;
+  border: 0.5px solid rgb(99, 95, 95);
+  color: rgb(99, 95, 95);
+  margin: 0.5px;
+  cursor: pointer;
+
+  overflow: auto;
 }
 
 div.content:hover {
-    background-color: rgb(207, 207, 207);
-    color: black;
+  transition: all 0.7s;
+  background-color: rgb(207, 207, 207);
+  color: black;
 }
 
 div h1 {
-    color: black;
+  color: black;
 }
 
 span {
-    font-weight: 700;
-    color: black;
+  font-weight: 700;
+  color: black;
 }
 
 .fas {
-    position: absolute;
-    align-self: flex-start;
-    right: 0;
-    font-size: 2.5em;
-    padding: 10px;
-    cursor: pointer;
+  position: absolute;
+  align-self: flex-start;
+  right: 0;
+  font-size: 2.5em;
+  padding: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  div#popup {
+    width: 70%;
+    height: 80%;
+  }
+
+  div.content {
+    width: 100%;
+  }
 }
 
 @media (max-height: 700px) {
-    #popup {
-        height: 90%;
-    }
+  #popup {
+    height: 70%;
+  }
 }
 
 @media (max-width: 940px) {
-    div.content {
-        width: 60%;
-    }
-}
-
-@media (max-width: 645px) {
-    div#popup {
-        width: 55%;
-        height: 80%;
-    }
-
-    div.content {
-        width: 100%;
-    }
+  div.content {
+    width: 60%;
+    height: 60%;
+  }
 }
