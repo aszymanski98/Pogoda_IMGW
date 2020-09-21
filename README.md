@@ -1,5 +1,5 @@
 # Weather_IMGW
-This site is showing weather in Poland based of IMGW [API](https://danepubliczne.imgw.pl/apiinfo).
+This site is showing weather in Poland based on IMGW [API](https://danepubliczne.imgw.pl/apiinfo).
 
 ## Table of contents
 * [Demo](#demo)
