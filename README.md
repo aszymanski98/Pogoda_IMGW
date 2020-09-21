@@ -9,7 +9,7 @@ This site is showing weather in Poland based of IMGW [API](https://danepubliczne
 * [Sources](#sources)
 
 ## Demo
-Working demo of the project: https://aszymanski98.github.io/Weather_IMGW/
+Working demo of the project: https://aszymanski98.github.io/Weather-IMGW/
 
 ## Features
 * Fully responsive page on computers and mobile devices
